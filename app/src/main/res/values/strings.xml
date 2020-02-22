@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RevolutionUC</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_open2">openActivity2</string>
 </resources>
