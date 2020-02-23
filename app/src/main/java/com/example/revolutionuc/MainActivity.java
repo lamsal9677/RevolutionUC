@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         buttonn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity2();
+                signup();
             }
         });
     }
-        public void openActivity2(){
-            Intent intent = new Intent(this, openActivity2.class);
+        public void signup(){
+            Intent intent = new Intent(this, signup.class);
             startActivity(intent);
         }
     }

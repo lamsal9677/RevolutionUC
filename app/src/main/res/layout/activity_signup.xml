@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+
+    tools:context=".signup">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/revuc" />
+
+    <EditText
+        android:id="@+id/Namee"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="150dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/Usernamee"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="150dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/Passwordd"
+        android:inputType="textPassword"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/submit"
+        android:elevation="8dp"
+        android:text="Button" />
+
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
