@@ -7,17 +7,7 @@
     tools:context=".chemistry">
 
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/biom" />
+
 
     <ImageView
         android:id="@+id/imageView2"

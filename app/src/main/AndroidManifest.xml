@@ -31,10 +31,6 @@
         <activity android:name=".StudyPhysics" />
         <activity android:name=".StudyChemistry" />
         <activity android:name=".StudyBio" />
-        <activity
-            android:name=".QuizHome"
-            android:label="@string/title_activity_quiz_home"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".signup" />
         <activity android:name=".login" />
         <activity

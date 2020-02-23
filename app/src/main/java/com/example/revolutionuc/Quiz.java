@@ -16,7 +16,22 @@ public class Quiz extends AppCompatActivity {
         if (v.getId() == R.id.backButton) {
             Intent i = new Intent(Quiz.this, mainmenu.class);
             startActivity(i);
-
         }
+
+        if(v.getId() == R.id.phyButton)
+        {
+            Intent i = new Intent(Quiz.this, physics.class);
+            startActivity(i);}
+
+        if(v.getId() == R.id.chemButton)
+        {
+            Intent i = new Intent(Quiz.this, chemistry.class);
+            startActivity(i);}
+
+        if(v.getId() == R.id.phyButton3)
+        {
+            Intent i = new Intent(Quiz.this, biology.class);
+            startActivity(i);}
     }
+
 }
