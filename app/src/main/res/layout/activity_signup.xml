@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/colorPrimaryDark"
 
     tools:context=".signup">
 
@@ -12,17 +12,17 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         app:srcCompat="@drawable/revuc" />
 
     <EditText
         android:id="@+id/Namee"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="150dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
         android:drawableLeft="@drawable/ic_action_name"
         android:hint="Name" />
 
@@ -30,28 +30,28 @@
         android:id="@+id/Usernamee"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="150dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="350dp"
         android:drawableLeft="@drawable/ic_action_user"
-        android:hint="Username" />
+        android:hint="Email Address" />
 
     <EditText
         android:id="@+id/Passwordd"
-        android:inputType="textPassword"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="450dp"
         android:drawableLeft="@drawable/ic_action_pass"
-        android:hint="Password" />
+        android:hint="Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="550dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
         android:background="@drawable/submit"
         android:elevation="8dp"
         android:text="SIGN UP" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/colorPrimaryDark"
 
     tools:context=".login">
 
@@ -12,14 +12,15 @@
         android:id="@+id/Username"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="150dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
         android:drawableLeft="@drawable/ic_action_user"
-        android:hint="Username" />
+        android:hint="Email Address" />
 
     <EditText
         android:id="@+id/Password"
+        android:inputType="textPassword"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
@@ -31,8 +32,8 @@
         android:id="@+id/button2"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="450dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
         android:background="@drawable/submit"
         android:elevation="8dp"
         android:text="LOG IN" />
@@ -42,19 +43,18 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:text="SIGN UP"
-        android:textColor="#00ff00"
         android:layout_marginTop="550dp"
-        android:textAlignment="center" />
-
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="#00ff00" />
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         app:srcCompat="@drawable/revuc" />
 
 </RelativeLayout>

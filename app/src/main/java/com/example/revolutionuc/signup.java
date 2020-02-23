@@ -56,7 +56,7 @@ public class signup extends AppCompatActivity {
                  return;
          }
              if((password.length() < 6)){
-                 passwordd.setError("Password Must be >=6 charactcers");
+                 passwordd.setError("Password Must be more than 6 characters");
                  return;
              }
 
