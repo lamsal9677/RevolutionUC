@@ -9,10 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".biofinal"></activity>
+        <activity android:name=".bio2" />
+        <activity android:name=".bio1" />
+        <activity android:name=".bio" />
+        <activity android:name=".chemfinal" />
+        <activity android:name=".chem2" />
+        <activity android:name=".chem1" />
+        <activity android:name=".chem" />
+        <activity android:name=".phyfinal" />
+        <activity android:name=".phy2" />
+        <activity android:name=".phy1" />
+        <activity android:name=".phy" />
+        <activity android:name=".biology" />
+        <activity android:name=".chemistry" />
+        <activity android:name=".physics" />
         <activity
             android:name=".QuizHome"
             android:label="@string/title_activity_quiz_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".signup" />
         <activity android:name=".login" />
         <activity
