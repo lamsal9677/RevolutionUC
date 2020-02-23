@@ -19,7 +19,7 @@
     <EditText
         android:id="@+id/Namee"
         android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="150dp"
         android:layout_centerHorizontal="true"
@@ -29,7 +29,7 @@
     <EditText
         android:id="@+id/Usernamee"
         android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:layout_marginTop="350dp"
         android:layout_marginLeft="150dp"
         android:layout_centerHorizontal="true"
@@ -40,7 +40,7 @@
         android:id="@+id/Passwordd"
         android:inputType="textPassword"
         android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="450dp"
         android:drawableLeft="@drawable/ic_action_pass"
@@ -54,13 +54,6 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/submit"
         android:elevation="8dp"
-        android:text="Button" />
-
-
-
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:text="SIGN UP" />
 
 </RelativeLayout>
