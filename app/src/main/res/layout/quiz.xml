@@ -15,6 +15,7 @@
         android:background="@drawable/button_green"
         android:onClick="onButtonClick"
         android:text="Biology"
+        android:elevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chemButton" />
@@ -27,6 +28,7 @@
         android:background="@drawable/button_green"
         android:onClick="onButtonClick"
         android:text="Chemistry"
+        android:elevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +45,7 @@
         android:layout_marginRight="16dp"
         android:gravity="center"
         android:text="Let's Take a Quiz"
+        android:elevation="8dp"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -62,6 +65,7 @@
         android:elevation="58dp"
         android:onClick="onButtonClick"
         android:text="Back"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -71,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Select a subject to take a quiz"
+        android:elevation="8dp"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,6 +90,7 @@
         android:background="@drawable/button_green"
         android:onClick="onButtonClick"
         android:text="Physics"
+        android:elevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />

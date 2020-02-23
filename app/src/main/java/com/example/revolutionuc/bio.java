@@ -2,12 +2,18 @@ package com.example.revolutionuc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class bio extends AppCompatActivity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+import javax.xml.transform.Result;
+
+public class bio extends AppCompatActivity {
+    DatabaseReference reff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +21,7 @@ public class bio extends AppCompatActivity {
 
         findViewById(R.id.hide).setVisibility(View.VISIBLE);
         findViewById(R.id.see).setVisibility(View.INVISIBLE);
-        TextView textView = (TextView) findViewById(R.id.Result);
+        final TextView textView = (TextView) findViewById(R.id.Result);
         textView.setText("Select One");
 
         findViewById(R.id.hide).setOnClickListener(new View.OnClickListener() {
@@ -53,6 +59,9 @@ public class bio extends AppCompatActivity {
                 findViewById(R.id.Ans4).setBackgroundResource(R.drawable.incorrect);
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz31");
+                myRef.setValue(0);
             }
         });
         findViewById(R.id.Ans2).setOnClickListener(new View.OnClickListener() {
@@ -65,6 +74,9 @@ public class bio extends AppCompatActivity {
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz31");
+                myRef.setValue(0);
             }
         });
         findViewById(R.id.Ans3).setOnClickListener(new View.OnClickListener() {
@@ -77,6 +89,9 @@ public class bio extends AppCompatActivity {
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Correct!!");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz31");
+                myRef.setValue(1);
             }
         });
         findViewById(R.id.Ans4).setOnClickListener(new View.OnClickListener() {
@@ -89,6 +104,9 @@ public class bio extends AppCompatActivity {
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz31");
+                myRef.setValue(0);
             }
         });
 
@@ -105,5 +123,4 @@ public class bio extends AppCompatActivity {
             }
         });
 
-    }
-}
+        }}

@@ -1,5 +1,6 @@
 package com.example.revolutionuc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -65,6 +66,8 @@ public class signup extends AppCompatActivity {
                  public void onComplete(@NonNull Task<AuthResult> task) {
                      if (task.isSuccessful()){
                          Toast.makeText(signup.this, "USER CREATED", Toast.LENGTH_SHORT).show();
+                         Intent i = new Intent(signup.this, MainActivity.class);
+                         startActivity(i);
                      }
                      else{
                          Toast.makeText(signup.this, "ERROR!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

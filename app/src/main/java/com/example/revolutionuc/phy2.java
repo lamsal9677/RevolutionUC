@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class phy2 extends AppCompatActivity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+public class phy2 extends AppCompatActivity {
+    DatabaseReference reff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +56,9 @@ public class phy2 extends AppCompatActivity {
                 findViewById(R.id.Ans4).setBackgroundResource(R.drawable.incorrect);
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz13");
+                myRef.setValue(1);
             }
         });
         findViewById(R.id.Ans2).setOnClickListener(new View.OnClickListener() {
@@ -65,6 +71,9 @@ public class phy2 extends AppCompatActivity {
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz13");
+                myRef.setValue(1);
 
             }
         });
@@ -78,6 +87,9 @@ public class phy2 extends AppCompatActivity {
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Correct!!");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz13");
+                myRef.setValue(1);
 
             }
         });
@@ -91,6 +103,9 @@ public class phy2 extends AppCompatActivity {
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("quiz13");
+                myRef.setValue(1);
             }
         });
 
@@ -104,6 +119,7 @@ public class phy2 extends AppCompatActivity {
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Select One");
+
             }
         });
     }

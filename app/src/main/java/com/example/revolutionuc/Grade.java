@@ -18,5 +18,20 @@ public class Grade extends AppCompatActivity {
             startActivity(i);
 
         }
+        if (v.getId() == R.id.phyButton) {
+            Intent i = new Intent(Grade.this, PhyGrade.class);
+            startActivity(i);
+
+        }
+        if (v.getId() == R.id.chemButton) {
+            Intent i = new Intent(Grade.this, ChemGrade.class);
+            startActivity(i);
+
+        }
+        if (v.getId() == R.id.bioButton) {
+            Intent i = new Intent(Grade.this, BioGrade.class);
+            startActivity(i);
+
+        }
     }
 }

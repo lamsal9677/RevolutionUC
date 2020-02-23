@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mainmenu"></activity>
+        <activity android:name=".mainmenu" />
         <activity android:name=".biofinal" />
         <activity android:name=".bio2" />
         <activity android:name=".bio1" />
@@ -33,10 +33,7 @@
         <activity android:name=".StudyBio" />
         <activity android:name=".signup" />
         <activity android:name=".login" />
-        <activity
-            android:name=".openActivity2"
-            android:label="@string/title_activity_open2"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PhyGrade" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
